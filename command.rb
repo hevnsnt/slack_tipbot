@@ -71,8 +71,8 @@ class Command
         short: true
       },{
         title: "",
-        value: "Please note: Transactions can take up to 5 minutes to appear in your account (Wait for blockchain to confim)",
-        short: true
+        value: "Please note: Transactions can take up to 5 minutes to appear in your account as the block is confimed)",
+        short: false
       }]
     }]
     #
