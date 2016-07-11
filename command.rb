@@ -57,6 +57,7 @@ class Command
     @result[:attachments] = [{
       fallback:"<@#{@user_id}> tipped <@#{target_user}> #{@amount}:SKC:",
       color: "good",
+      author_name: "SecKCoin Bank and Trust"
       fields: [{
         title: ":skc: Transaction Hash:",
         value: "#{tx}",
@@ -70,9 +71,7 @@ class Command
         value: "<@#{target_user}>\n<#{@coin_config_module::ADDRESS_LOOKUP}#{user_address(target_user)}|#{user_address(target_user)}>\nCurrent Balance: #{targetBalance}",
         short: true
       },{
-        title: "",
-        value: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
-        short: false
+        footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
       }]
     }]
     #
@@ -150,7 +149,7 @@ class Command
         title: "Bot Commands:",
       },{
         title: "balance:",
-        value: "Usage 'tipskc balance' -- This will show your your current :skc: balance",
+        value: "Usage _tipskc balance_ -- This will show your your current :skc: balance",
         short: false
       },{
         title: "deposit:",
