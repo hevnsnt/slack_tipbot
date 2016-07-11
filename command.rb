@@ -57,8 +57,8 @@ class Command
     @result[:attachments] = [{
       fallback:"<@#{@user_id}> tipped <@#{target_user}> #{@amount}:SKC:",
       color: "good",
-      author_name: "SecKCoin Bank and Trust"
-      footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)"
+      author_name: "SecKCoin Bank and Trust",
+      footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
       fields: [{
         title: ":skc: Transaction Hash:",
         value: "#{tx}",
