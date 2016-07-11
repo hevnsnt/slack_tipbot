@@ -71,7 +71,7 @@ class Command
         value: "<@#{target_user}>\n<#{@coin_config_module::ADDRESS_LOOKUP}#{user_address(target_user)}|#{user_address(target_user)}>\nCurrent Balance: #{targetBalance}",
         short: true
       },{
-        footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
+        footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)"
       }]
     }]
     #
