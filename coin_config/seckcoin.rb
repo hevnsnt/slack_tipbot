@@ -1,7 +1,8 @@
 module Seckcoin
+  CURRENCY_NAME = 'SecKCoin'
+  CURRENCY_ICON = ':skc:'
   PERFORM_ERROR = 'I do not understand that command. Try "help"'
   BALANCE_REPLY_PRETEXT = 'Your balance: '
-  CURRENCY_ICON = ':skc:'
   WEALTHY_UPPER_BOUND = 1000
   WEALTHY_UPPER_BOUND_POSTTEXT = ' very wealthy!'
   WEALTHY_UPPER_BOUND_EMOJI = ':moneybag:'

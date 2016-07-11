@@ -69,6 +69,10 @@ class Command
         title: "To: ",
         value: "<@#{target_user}>\n<#{@coin_config_module::ADDRESS_LOOKUP}#{user_address(target_user)}|#{user_address(target_user)}>\nCurrent Balance: #{targetBalance}",
         short: true
+      },{
+        title: "",
+        value: "Please note: Transactions can take up to 5 minutes to appear in your account (Wait for blockchain to confim)",
+        short: true
       }]
     }]
     #
@@ -101,7 +105,7 @@ class Command
         upper = @params.shift.to_i
         @amount = rand(lower..upper).to_i
     else 
-        @amount = amount.to_i
+        @amount = amount.to_f
     end
     #amount = @params.shift
     #randomize_amount if (amount == "random")
