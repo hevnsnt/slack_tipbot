@@ -71,7 +71,7 @@ class Command
         short: true
       },{
         title: "",
-        value: "Please note: Transactions can take up to 5 minutes to appear in your account as the block is confimed)",
+        value: "Please note: Transactions need one block confirmation to appear (Up to 5 minutes)",
         short: false
       }]
     }]
