@@ -71,7 +71,7 @@ class Command
         short: true
       },{
         title: "",
-        value: "Please note: Transactions need one block confirmation to appear (Up to 5 minutes)",
+        value: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
         short: false
       }]
     }]
