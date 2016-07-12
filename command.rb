@@ -58,7 +58,7 @@ class Command
       fallback:"<@#{@user_id}> tipped <@#{target_user}> #{@amount}:SKC:",
       color: "good",
       author_name: "SecKCoin Bank and Trust",
-      footer: "Please note: Transactions require one block confirmation to appear (Up to 5 minutes)",
+      footer: "Please note: Transactions require at least one block confirmation in order to appear (Up to 5 minutes)",
       fields: [{
         title: ":skc: Transaction Hash:",
         value: "#{tx}",
@@ -105,9 +105,6 @@ class Command
     else 
         @amount = amount.to_f
     end
-    #amount = @params.shift
-    #randomize_amount if (amount == "random")
-    #@amount = amount.to_i
 
   
     
@@ -148,7 +145,7 @@ class Command
         title: "Bot Commands:",
       },{
         title: "balance:",
-        value: "Usage _tipskc balance_ -- This will show your your current :skc: balance",
+        value: "Usage tipskc balance -- This will show your your current :skc: balance",
         short: false
       },{
         title: "deposit:",
