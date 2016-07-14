@@ -40,7 +40,7 @@ class Command
   end
 
   def deposit
-    @result[:text] = "#{@coin_config_module::DEPOSIT_PRETEXT} #{user_address(@user_id)} #{@coin_config_module::DEPOSIT_POSTTEXT}"
+    @result[:text] = "#{@coin_config_module::DEPOSIT_PRETEXT} #{user_address(@user_id)} #{@coin_config_module::DEPOSIT_POSTTEXT}\n"
     @result[:text] += "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}"
   end
 
