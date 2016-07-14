@@ -42,6 +42,9 @@ class Command
   def deposit
     @result[:text] = "#{@coin_config_module::DEPOSIT_PRETEXT} #{user_address(@user_id)} #{@coin_config_module::DEPOSIT_POSTTEXT}\n"
     @result[:attachments] = [{
+      fallback:"<@#{@user_id}> tipped <@#{target_user}> #{@amount}:SKC:",
+      color: "good",
+      author_name: "SecKCoin Bank and Trust",
       image_url: "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}"
       }]
   end
