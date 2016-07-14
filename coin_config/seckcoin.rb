@@ -16,6 +16,7 @@ module Seckcoin
   TIP_POSTTEXT2 = '|blockchain'
   TIP_POSTTEXT3 = '|Address'
   WITHDRAW_TEXT = 'TRANSFER INITITIATED'
+  ADDRESS_QR = 'https://seckco.in/qr/'
   WITHDRAW_ICON = ':classical_building:'
   NETWORKINFO_ICON = ':bar_chart:'
   TOO_POOR_TEXT = 'Sory, your to pour'
