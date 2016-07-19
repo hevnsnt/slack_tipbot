@@ -45,7 +45,7 @@ class Command
       #(View transaction on <#{@coin_config_module::TIP_POSTTEXT1}#{tx}|https://seckco.in>)
       fallback:"#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}",
       color: "good",
-      author_name: "<@#{@user_id}>'s Deposit Address -- SecKCoin Bank and Trust",
+      author_name: "SecKCoin Bank and Trust",
       image_url: "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}"
       }]
   end
