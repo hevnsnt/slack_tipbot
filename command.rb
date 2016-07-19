@@ -47,7 +47,6 @@ class Command
       color: "good",
       author_name: "#{user_address}'s Deposit Address -- SecKCoin Bank and Trust",
       image_url: "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}"
-        }]
       }]
   end
 
