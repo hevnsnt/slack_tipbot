@@ -7,7 +7,7 @@ module Seckcoin
   WEALTHY_UPPER_BOUND_POSTTEXT = ' WOAH, you very wealthy!'
   WEALTHY_UPPER_BOUND_EMOJI = ':moneybag:'
   BALANCE_REPLY_POSTTEXT = ' SecKCoins'
-  DEPOSIT_PRETEXT = '<@#{@user_id}>s :skc: address is: '
+  DEPOSIT_PRETEXT = ' :skc: address is: '
   DEPOSIT_POSTTEXT = '[View details]'
   TIP_ERROR_TEXT = 'Syntax is: tip @username amount'
   TIP_PRETEXT = ':money_with_wings:'

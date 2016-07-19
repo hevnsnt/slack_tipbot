@@ -40,7 +40,7 @@ class Command
   end
 
   def deposit
-    @result[:text] = "#{@coin_config_module::DEPOSIT_PRETEXT} #{user_address(@user_id)} #{@coin_config_module::DEPOSIT_POSTTEXT}\n"
+    @result[:text] = "<@#{@user_id}>'s #{@coin_config_module::DEPOSIT_PRETEXT} #{user_address(@user_id)} #{@coin_config_module::DEPOSIT_POSTTEXT}\n"
     @result[:attachments] = [{
       #(View transaction on <#{@coin_config_module::TIP_POSTTEXT1}#{tx}|https://seckco.in>)
       fallback:"#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}",
