@@ -46,7 +46,7 @@ class Command
       fallback:"#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}",
       color: "good",
       author_name: "SecKCoin Bank and Trust",
-      image_url: "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}"
+      image_url: "#{@coin_config_module::ADDRESS_QR}#{user_address(@user_id)}",
       fields: [{
         title: "#{user_address}'s Deposit Address ",
         value: "",
